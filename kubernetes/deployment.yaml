@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: typing-speed-test-main-app
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: typing-speed-test-main-app
+  template:
+    metadata:
+      labels:
+        app: typing-speed-test-main-app
+    spec:
+      containers:
+        - name: typing-speed-test-main-app
+          image: typing-speed-test-main-app:latest
+          ports:
+            - containerPort: 80
+          env:
+            - name: NODE_ENV
+              value: "production"
+          resources:
+            requests:
+              memory: "128Mi"
+              cpu: "100m"
+            limits:
+              memory: "256Mi"
+              cpu: "500m"
+          livenessProbe:
+            httpGet:
+              path: /TypingSpeedTest/
+              port: 80
+            initialDelaySeconds: 10
+            periodSeconds: 10

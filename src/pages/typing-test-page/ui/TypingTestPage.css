@@ -1,0 +1,20 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+  overflow-x: hidden;
+}
+
+.app__inner {
+  position: relative;
+  flex: 1 0 auto;
+  width: min(100% - 3rem, var(--content-max));
+  margin-inline: auto;
+  padding-block: 0 1.5rem;
+}
+
+@media (max-width: 40em) {
+  .app__inner {
+    width: min(100% - 2.5rem, var(--content-max));
+  }
+}

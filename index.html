@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Typing Speed Test — measure your WPM and accuracy against timed or full-passage runs. A pixel-perfect Frontend Mentor solution built with Alpine.js and Vite."
+    />
+    <meta name="theme-color" content="#121212" />
+    <link rel="icon" type="image/png" sizes="32x32" href="%BASE_URL%images/favicon-32x32.png" />
+    <title>Frontend Mentor | Typing Speed Test</title>
+    <link rel="preload" href="%BASE_URL%fonts/Sora-Regular.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="%BASE_URL%fonts/Sora-SemiBold.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="%BASE_URL%fonts/Sora-Bold.ttf" as="font" type="font/ttf" crossorigin />
+    <style>
+      @font-face {
+        font-family: 'Sora';
+        font-style: normal;
+        font-weight: 400;
+        font-display: optional;
+        src: url('%BASE_URL%fonts/Sora-Regular.ttf') format('truetype');
+      }
+      @font-face {
+        font-family: 'Sora';
+        font-style: normal;
+        font-weight: 600;
+        font-display: optional;
+        src: url('%BASE_URL%fonts/Sora-SemiBold.ttf') format('truetype');
+      }
+      @font-face {
+        font-family: 'Sora';
+        font-style: normal;
+        font-weight: 700;
+        font-display: optional;
+        src: url('%BASE_URL%fonts/Sora-Bold.ttf') format('truetype');
+      }
+      [x-cloak] {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/app/main.ts"></script>
+  </body>
+</html>

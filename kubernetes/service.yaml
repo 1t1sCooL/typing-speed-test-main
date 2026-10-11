@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: typing-speed-test-main
+  namespace: default
+spec:
+  selector:
+    app: typing-speed-test-main-app
+  ports:
+    - port: 80
+      targetPort: 80
+  type: ClusterIP
