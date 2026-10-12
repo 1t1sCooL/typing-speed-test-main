@@ -43,7 +43,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Vercel](https://typing-speed-test-main.vercel.app/)
+- Solution URL: [Vercel](https://typing-speed-test-main-eight.vercel.app/)
 - Live Site URL: [mmalabugin.ru/TypingSpeedTest](https://mmalabugin.ru/TypingSpeedTest/)
 
 ## My process
